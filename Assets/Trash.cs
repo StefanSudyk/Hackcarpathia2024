@@ -22,8 +22,30 @@ public class Trash : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         //if (other.CompareTag("Player") && !hasTrigerred)
-       // {
-            hasTrigerred = true;
+        // {
+        // 0 - plastik
+        // 1 - bio
+        // 2 - papier
+        // 3 - szk³o
+        int trashClass;
+
+        hasTrigerred = true;
+        if (gameObject.name.Contains("0"))
+        {
+            trashClass = 0;
+        }
+        else if (gameObject.name.Contains("1"))
+        {
+            trashClass = 1;
+        }
+        else if (gameObject.name.Contains("2"))
+        {
+            trashClass = 2;
+        }
+        else if (gameObject.name.Contains("3"))
+        {
+            trashClass = 3;
+        }
             collector.IncreaseTrash(value);
             Destroy(gameObject);
             //manager.Playy(manager.pickUp);
