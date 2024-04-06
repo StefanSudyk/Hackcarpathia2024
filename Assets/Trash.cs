@@ -13,6 +13,7 @@ public class Trash : MonoBehaviour
     void Start()
     {
         collector = TrashCollector.instance;
+        
     }
 
     // Update is called once per frame
@@ -47,6 +48,7 @@ public class Trash : MonoBehaviour
             trashClass = 3;
         }
             collector.IncreaseTrash(value, trashClass);
+
             Destroy(gameObject);
             //manager.Playy(manager.pickUp);
        // }
