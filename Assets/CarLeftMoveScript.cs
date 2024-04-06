@@ -20,7 +20,7 @@ public class CarLeftMoveScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        trashClass = Random.Range(0, 3);
+        trashClass = Random.Range(0, 4);
         trashLocation = Random.Range((float)-8.4, (float)8.4);
        
         trash = trashPrefabs[trashClass];
