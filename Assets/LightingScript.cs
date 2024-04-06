@@ -16,7 +16,7 @@ public class LightingScript : MonoBehaviour
     void Start()
     {
         energyLevel = 100;
-        energyDecreaseRate = 1.5f;
+        energyDecreaseRate = 2.0f;
     }
 
     private void OnGUI()
