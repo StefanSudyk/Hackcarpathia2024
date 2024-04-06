@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:VisualElement name="container" style="flex-grow: 1; align-self: flex-end; width: 200px; background-color: rgba(0, 0, 0, 0.12);">
+            <ui:ListView name="ListView" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
