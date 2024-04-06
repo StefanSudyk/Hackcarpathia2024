@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class CarSpawnScript : MonoBehaviour
 {
-    public GameObject car;
+    public GameObject[] cars;
+    private int carsCount;
     public float spawnRate = 2;
     private float timer = 0;
     // Start is called before the first frame update
 
     void spawnCar()
     {
-        Instantiate(car, transform.position, transform.rotation);
+        Instantiate(cars[Random.Range(0,carsCount)], transform.position, transform.rotation);
     }
 
     void Start()
     {
+        carsCount = cars.Length;
         timer += Random.Range(0, spawnRate);
     }
 
