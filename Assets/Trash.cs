@@ -27,7 +27,7 @@ public class Trash : MonoBehaviour
         // 1 - bio
         // 2 - papier
         // 3 - szk³o
-        int trashClass;
+        int trashClass=0;
 
         hasTrigerred = true;
         if (gameObject.name.Contains("0"))
@@ -46,7 +46,7 @@ public class Trash : MonoBehaviour
         {
             trashClass = 3;
         }
-            collector.IncreaseTrash(value);
+            collector.IncreaseTrash(value, trashClass);
             Destroy(gameObject);
             //manager.Playy(manager.pickUp);
        // }
