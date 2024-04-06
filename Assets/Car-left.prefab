@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8288855344159739648}
   m_Layer: 8
   m_Name: Car-left
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
