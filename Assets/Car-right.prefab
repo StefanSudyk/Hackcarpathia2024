@@ -144,3 +144,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carSpeed: 3.5
+  trashPrefabs:
+  - {fileID: 8736730358770635349, guid: f28eadd27560d554dbf76ef1e07c00dd, type: 3}
+  - {fileID: 8736730358770635349, guid: fe3057020eb16a94fa593fcd4babd267, type: 3}
+  - {fileID: 8736730358770635349, guid: 8682cf662f953fd42b243e6a54e1a616, type: 3}
+  - {fileID: 8736730358770635349, guid: e8b00c112c99c944fac49ffa61dd4e36, type: 3}
