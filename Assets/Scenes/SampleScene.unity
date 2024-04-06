@@ -5928,9 +5928,10 @@ GameObject:
   - component: {fileID: 1902701552}
   - component: {fileID: 1902701551}
   - component: {fileID: 1902701550}
+  - component: {fileID: 1902701555}
   m_Layer: 0
   m_Name: postac
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5947,7 +5948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 035bcfdbe4516c448a52635653e339c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movSpeed: 3
+  movSpeed: 1.75
 --- !u!50 &1902701551
 Rigidbody2D:
   serializedVersion: 4
@@ -6077,6 +6078,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1902701555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902701549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cf1d3194ab30df4b83f744edcee9730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2112725735
 GameObject:
   m_ObjectHideFlags: 0
@@ -6185,3 +6198,8 @@ SceneRoots:
   - {fileID: 2113976364}
   - {fileID: 628332069}
   - {fileID: 615605846}
+  - {fileID: 535093259}
+  - {fileID: 1902701554}
+  - {fileID: 1255075364}
+  - {fileID: 511996858}
+  - {fileID: 2112725737}
