@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,9 +9,11 @@ public class Movement : MonoBehaviour
     //float SpeedX, SpeedY;
     private Rigidbody2D rb;
     private Vector2 movDirection;
+    Animator animator;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -25,6 +28,8 @@ public class Movement : MonoBehaviour
         float moveY = Input.GetAxisRaw("Vertical") * movSpeed;
 
         movDirection = new Vector2(moveX, moveY);
+        animator.SetFloat("xVelocity", Math.Abs(rb.velocity.x));
+        animator.SetFloat("yVelocity", rb.velocity.x);
     }
 
     private void FixedUpdate()
