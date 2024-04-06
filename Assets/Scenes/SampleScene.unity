@@ -4928,7 +4928,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4456854c31949514e81e6ac12443fae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 7367833693169400050, guid: 65811e6bdf7f9cb47a9f539664853b6d, type: 3}
+  cars:
+  - {fileID: 7367833693169400050, guid: 65811e6bdf7f9cb47a9f539664853b6d, type: 3}
+  - {fileID: 7367833693169400050, guid: bcb24017d2d4d0b498dbb92caacffe13, type: 3}
+  - {fileID: 7367833693169400050, guid: 806439e8f93aa2145be8f56bf9d5f15d, type: 3}
   spawnRate: 20
 --- !u!4 &180430887
 Transform:
@@ -4974,7 +4977,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4456854c31949514e81e6ac12443fae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 7367833693169400050, guid: 1358f8f05a7ee4a4fb245536ee2cbad0, type: 3}
+  cars:
+  - {fileID: 7367833693169400050, guid: 1358f8f05a7ee4a4fb245536ee2cbad0, type: 3}
+  - {fileID: 7367833693169400050, guid: 8b20f9934e17651479dcee68aed94ac2, type: 3}
+  - {fileID: 7367833693169400050, guid: b98b4907e92301c4dbf7673c64cc170d, type: 3}
   spawnRate: 14
 --- !u!4 &475309679
 Transform:
@@ -5088,7 +5094,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4456854c31949514e81e6ac12443fae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 7367833693169400050, guid: 1358f8f05a7ee4a4fb245536ee2cbad0, type: 3}
+  cars:
+  - {fileID: 7367833693169400050, guid: 1358f8f05a7ee4a4fb245536ee2cbad0, type: 3}
+  - {fileID: 7367833693169400050, guid: 8b20f9934e17651479dcee68aed94ac2, type: 3}
+  - {fileID: 7367833693169400050, guid: b98b4907e92301c4dbf7673c64cc170d, type: 3}
   spawnRate: 16
 --- !u!4 &517320208
 Transform:
@@ -5212,6 +5221,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -6
   maxX: 6
+  minY: -3
+  maxY: 6.5
   target: {fileID: 1902701554}
 --- !u!1 &535093256
 GameObject:
@@ -5582,7 +5593,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4456854c31949514e81e6ac12443fae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 7367833693169400050, guid: 65811e6bdf7f9cb47a9f539664853b6d, type: 3}
+  cars:
+  - {fileID: 7367833693169400050, guid: 65811e6bdf7f9cb47a9f539664853b6d, type: 3}
+  - {fileID: 7367833693169400050, guid: bcb24017d2d4d0b498dbb92caacffe13, type: 3}
+  - {fileID: 7367833693169400050, guid: 806439e8f93aa2145be8f56bf9d5f15d, type: 3}
   spawnRate: 18
 --- !u!4 &991867092
 Transform:
@@ -5628,7 +5642,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4456854c31949514e81e6ac12443fae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 7367833693169400050, guid: 65811e6bdf7f9cb47a9f539664853b6d, type: 3}
+  cars:
+  - {fileID: 7367833693169400050, guid: 65811e6bdf7f9cb47a9f539664853b6d, type: 3}
+  - {fileID: 7367833693169400050, guid: bcb24017d2d4d0b498dbb92caacffe13, type: 3}
+  - {fileID: 7367833693169400050, guid: 806439e8f93aa2145be8f56bf9d5f15d, type: 3}
   spawnRate: 14
 --- !u!4 &1056594985
 Transform:
@@ -5674,7 +5691,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4456854c31949514e81e6ac12443fae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 7367833693169400050, guid: 65811e6bdf7f9cb47a9f539664853b6d, type: 3}
+  cars:
+  - {fileID: 7367833693169400050, guid: 65811e6bdf7f9cb47a9f539664853b6d, type: 3}
+  - {fileID: 7367833693169400050, guid: bcb24017d2d4d0b498dbb92caacffe13, type: 3}
+  - {fileID: 7367833693169400050, guid: 806439e8f93aa2145be8f56bf9d5f15d, type: 3}
   spawnRate: 16
 --- !u!4 &1161850191
 Transform:
@@ -5822,7 +5842,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4456854c31949514e81e6ac12443fae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 7367833693169400050, guid: 1358f8f05a7ee4a4fb245536ee2cbad0, type: 3}
+  cars:
+  - {fileID: 7367833693169400050, guid: 1358f8f05a7ee4a4fb245536ee2cbad0, type: 3}
+  - {fileID: 7367833693169400050, guid: 8b20f9934e17651479dcee68aed94ac2, type: 3}
+  - {fileID: 7367833693169400050, guid: b98b4907e92301c4dbf7673c64cc170d, type: 3}
   spawnRate: 20
 --- !u!4 &1299510042
 Transform:
@@ -5868,7 +5891,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4456854c31949514e81e6ac12443fae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 7367833693169400050, guid: 1358f8f05a7ee4a4fb245536ee2cbad0, type: 3}
+  cars:
+  - {fileID: 7367833693169400050, guid: 1358f8f05a7ee4a4fb245536ee2cbad0, type: 3}
+  - {fileID: 7367833693169400050, guid: 8b20f9934e17651479dcee68aed94ac2, type: 3}
+  - {fileID: 7367833693169400050, guid: b98b4907e92301c4dbf7673c64cc170d, type: 3}
   spawnRate: 22
 --- !u!4 &1686213524
 Transform:
@@ -5914,7 +5940,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4456854c31949514e81e6ac12443fae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 7367833693169400050, guid: 1358f8f05a7ee4a4fb245536ee2cbad0, type: 3}
+  cars:
+  - {fileID: 7367833693169400050, guid: 1358f8f05a7ee4a4fb245536ee2cbad0, type: 3}
+  - {fileID: 7367833693169400050, guid: 8b20f9934e17651479dcee68aed94ac2, type: 3}
+  - {fileID: 7367833693169400050, guid: b98b4907e92301c4dbf7673c64cc170d, type: 3}
   spawnRate: 18
 --- !u!4 &1886896546
 Transform:
@@ -6180,7 +6209,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4456854c31949514e81e6ac12443fae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 7367833693169400050, guid: 65811e6bdf7f9cb47a9f539664853b6d, type: 3}
+  cars:
+  - {fileID: 7367833693169400050, guid: 65811e6bdf7f9cb47a9f539664853b6d, type: 3}
+  - {fileID: 7367833693169400050, guid: bcb24017d2d4d0b498dbb92caacffe13, type: 3}
+  - {fileID: 7367833693169400050, guid: 806439e8f93aa2145be8f56bf9d5f15d, type: 3}
   spawnRate: 22
 --- !u!4 &2113976364
 Transform:
