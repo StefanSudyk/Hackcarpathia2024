@@ -10,7 +10,7 @@ public class TrashCollector : MonoBehaviour
     private Stack<int> trashCollection = new Stack<int>();
 
     [SerializeField] private TMP_Text trashDisplay;
-    private int trash;
+    public int trash;
     private void Awake()
     {
         if (!instance)
