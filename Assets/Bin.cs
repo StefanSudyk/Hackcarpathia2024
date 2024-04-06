@@ -15,8 +15,12 @@ public class Bin : MonoBehaviour
 
     void Update()
     {
-       
-        if (collector != null)
+        if (collector.trash == 0)
+        {
+            currentVariantIndex = 0;
+            gameObject.GetComponent<SpriteRenderer>().sprite = binVariants[currentVariantIndex];
+        }
+        else if (collector != null)
         {
             
             if (collector.trash >= (currentVariantIndex + 1) * 5 && collector.trash <= 40)

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LightingScript : MonoBehaviour
 {
@@ -45,6 +46,9 @@ public class LightingScript : MonoBehaviour
             SetTransparency(transparency);
             setDarkSprite();
         }
+        if(energyLevel <= 0)
+        {
+            SceneManager.LoadScene("GameOverScene");        }
     }
 
     private void setDarkSprite()
