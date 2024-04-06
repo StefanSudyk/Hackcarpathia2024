@@ -4,15 +4,39 @@ using UnityEngine;
 
 public class Bin : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Sprite[] binVariants; 
+    private int currentVariantIndex = 0; 
+    private TrashCollector collector; 
+
     void Start()
     {
-        
+        collector = FindObjectOfType<TrashCollector>(); 
     }
 
-    // Update is called once per frame
     void Update()
     {
+       
+        if (collector != null)
+        {
+            
+            if (collector.trash >= (currentVariantIndex + 1) * 5 && collector.trash <= 40)
+            {
+                
+                ChangeBinVariant();
+            }
+        }
+    }
+
+    
+    private void ChangeBinVariant()
+    {
         
+        if (currentVariantIndex + 1 < binVariants.Length)
+        {
+            
+            currentVariantIndex++;
+            
+            gameObject.GetComponent<SpriteRenderer>().sprite = binVariants[currentVariantIndex];
+        }
     }
 }
