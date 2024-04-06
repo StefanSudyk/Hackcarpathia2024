@@ -10,6 +10,8 @@ public class LightingScript : MonoBehaviour
     public float energyLevel;
     public float energyDecreaseRate; // Prêdkoœæ spadku energii na jednostkê czasu
     [SerializeField] private TMP_Text energyDisplay;
+    public Sprite brightBuilding;
+    public Sprite darkBuilding;
 
     void Start()
     {
@@ -35,12 +37,24 @@ public class LightingScript : MonoBehaviour
         if(energyLevel > 30)
         {
             SetTransparency(0);
+            setBrightSprite();
         }
         if (energyLevel < 30 && energyLevel > 1)
         {
             float transparency = Mathf.Lerp(0, 1, (30 - energyLevel) / 30f); // Interpoluj przezroczystoœæ od 0 do 1 w zale¿noœci od poziomu energii
             SetTransparency(transparency);
+            setDarkSprite();
         }
+    }
+
+    private void setDarkSprite()
+    {
+        this.GetComponent<SpriteRenderer>().sprite = darkBuilding;
+    }
+
+    private void setBrightSprite()
+    {
+        this.GetComponent<SpriteRenderer>().sprite = brightBuilding;
     }
 
     public void SetTransparency(float transparency)
