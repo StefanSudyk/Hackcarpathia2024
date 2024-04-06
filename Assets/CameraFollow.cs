@@ -7,7 +7,7 @@ public class CameraFollow : MonoBehaviour
 {
     public float minX = -5;
     public float maxX = 5;
-    public float minY = -3;
+    public float minY = -3.5f;
     public float maxY = 6.5f;
     private Vector3 offset = new Vector3(0f, 0f, -10f);
     private float smoothTime = 0.15f;
