@@ -8,7 +8,7 @@ public class TrashCollector : MonoBehaviour
     // Start is called before the first frame update
     public static TrashCollector instance;
     [SerializeField] private TMP_Text trashDisplay;
-    private int trash;
+    public int trash;
     private void Awake()
     {
         if (!instance)
