@@ -7,6 +7,8 @@ public class TrashCollector : MonoBehaviour
 {
     // Start is called before the first frame update
     public static TrashCollector instance;
+    private Stack<int> trashCollection = new Stack<int>();
+
     [SerializeField] private TMP_Text trashDisplay;
     public int trash;
     private void Awake()
@@ -21,10 +23,10 @@ public class TrashCollector : MonoBehaviour
         trashDisplay.text = trash.ToString();
     }
 
-    public void IncreaseTrash(int t)
+    public void IncreaseTrash(int t, int tClass)
     {
         trash +=t;
-        
+        trashCollection.Push(tClass);
     }
     // Update is called once per frame
     
